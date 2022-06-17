@@ -1,0 +1,28 @@
+
+.productos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "bg1 bg2 bg3"
+                        "bg4 bg5 bg6";
+    gap: 50px;
+    margin-bottom: 50px;
+    margin-left: 150px;
+    img {
+        width: 350px;
+        height: 400px;
+        a {
+            color: black;
+            font-size: medium;
+            margin-top: 10px;
+            background-color: gray;
+            width: 100%;
+            text-align: center;
+         }
+        }
+
+     }
+  
+  
+  
+  
