@@ -1,0 +1,44 @@
+$contacto: (
+        send: green,
+        clear: blue,
+        none: red,
+);   
+    @each $boton, $color in $contacto {
+        .btn-#{$boton}{
+            background-color: $color;
+        }
+    }
+
+.extend1{
+    background-color: greenyellow;
+    font-size: larger;
+    width: 400px;
+    border: 3px solid black;
+    border-radius: 5px;
+}
+
+.extend2{
+    @extend .extend1;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 600px;
+    font-weight: bolder;
+}
+
+.extend3{
+    @extend .extend2;
+    background-color: red;
+    border: 3px black dashed;
+}
+
+@mixin boxmix ($height, $width){
+    height: $height;
+    width: $width;
+}
+
+.mixin1{
+    @include boxmix(100px, 500px);
+    font-size: larger;
+    background-color:darkseagreen;
+    display: flex;
+    align-items: center;
+}
