@@ -1,11 +1,12 @@
 $contacto: (
-        send: green,
-        clear: blue,
-        none: red,
+        send: grey,
+        clear: grey,
+        none: grey,
 );   
     @each $boton, $color in $contacto {
         .btn-#{$boton}{
             background-color: $color;
+            border-radius: 5px;
         }
     }
 

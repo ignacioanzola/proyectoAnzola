@@ -2,6 +2,9 @@
 @import "nav";
 @import "productos";
 @import "operaciones";
+@import "contacto";
+@import "notebooks";
+@import "auriculares";
 
 * {
   padding: 0;
@@ -14,7 +17,10 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto 700px 1fr auto;
-  grid-template-areas: "header" "hero" "main" "footer";
+  grid-template-areas: "header"
+                       "hero"
+                       "main"
+                       "footer"
 }
 
 /* ----- HEADER ----- */
@@ -64,30 +70,36 @@ section {
 }
 
 /* ----- MAIN -----  */
-#main {
+main {
   grid-area: main;
   width: 100%;
   background-color: rgb(231, 229, 229);
 }
 
-.subtituloMain {
+
+.subtituloMain{
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   text-align: center;
-}
-
-.subtituloMain p {
+  background-color: rgb(18, 17, 17);
+  p{
   font-size: x-large;
   font-weight: bold;
   font-family: "Plus Jakarta Sans", sans-serif;
-  margin-bottom: 20px;
+  margin: 15px 0px;
+  color: white;
+}
+  h3{
+    margin-bottom: 15px;
+    color: rgb(255, 153, 0);
+}
 }
 
 .nombresProductos {
   font-size: large;
-  font-weight: bold;
+  font-weight: 400;
   font-family: "Plus Jakarta Sans", sans-serif;
   display: flex;
   flex-direction: column;
@@ -95,14 +107,32 @@ section {
   border: 1px solid black;
   border-radius: 8px;
   width: 370px;
-  height: 470px;
+  height: 460px;
   background-color: white;
+  margin-bottom: 50px;
+  margin-left: 125px;
+        h4{
+          font-weight: 800;
+          padding-bottom: 1.5px;
+        }
+        p{
+          border: 1px solid rgb(57, 53, 53);
+          border-radius: 2px;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+        a{
+          text-decoration:underline;
+            font-weight: 400;
+            cursor: pointer;
+            color: black;
+            margin-top: 4px;
+        }
 }
 
 /* ----- FOOTER ----- */
-footer {
-  grid-area: footer;
-}
 
 .containerFooter {
   background-color: black;
@@ -111,6 +141,7 @@ footer {
 }
 
 footer {
+  grid-area: footer;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -121,9 +152,6 @@ footer {
 .logosFooter {
   display: flex;
   gap: 15px;
-}
-
-.logosFooter {
   font-size: 25px;
 }
 
@@ -132,11 +160,21 @@ footer p {
   font-size: 15px;
 }
 
+.fa-twitter{
+  color: #00acee;
+}
+
+.fa-facebook-f{
+  color: #4267B2;
+}
+
+.fa-instagram{
+  color: #d35437d2;
+}
 /* ---------- */
 @media screen and (max-width: 1375px) {
-  .productos {
-    margin-left: 10px;
-    margin-right: 10px;
+  .nombresProductos{
+    margin-left: 50px;
   }
 }
 @media screen and (max-width: 950px) {
@@ -151,8 +189,18 @@ footer p {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas: "bg1 bg2 " "bg3 bg4" "bg5 bg6";
-    margin-left: 15px;
-    margin-right: 15px;
+  }
+  
+  .subtituloMain{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h3{
+      font-size: 30px;
+      padding: 0px 5px;
+    }
   }
 
   .hero {
@@ -167,12 +215,17 @@ footer p {
   .contenidoHeader {
     display: flex;
     flex-direction: column;
-    margin-left: 5px;
-    margin-right: 5px;
+    align-items: center;
+  }
+
+  .nombresProductos{
+    margin-left: 55px;
   }
 }
 @media screen and (max-width: 500px) {
   body {
+    width: 100%;
+    height: 100%;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto 300px 1fr auto;
@@ -189,7 +242,6 @@ footer p {
   .hero {
     background: none;
     background-color: rgb(42, 50, 52);
-    display: flex;
     height: 300px;
     color: white;
   }
@@ -198,7 +250,10 @@ footer p {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas: "bg1" "bg2" "bg3" "bg4" "bg5" "bg6";
-    margin-left: 115px;
+   
+  }
+  .nombresProductos{
+    margin-left: 110px;
   }
 }
 @media screen and (max-width: 300px) {

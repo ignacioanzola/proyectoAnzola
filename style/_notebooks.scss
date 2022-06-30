@@ -1,0 +1,135 @@
+.bodyNotebooks{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "header"
+                        "main"
+                        "footer"
+}
+
+.containerHeaderN{
+    color: white;
+    background-color: black;
+  }
+
+  .contenidoHeaderN{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    font-size: 20px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+  }
+
+.productosN {
+    justify-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "notebook1 notebook2 notebook3 notebook4"
+                        "notebook5 notebook6 notebook7 notebook8 ";
+    margin-bottom: 50px;
+    img {
+        width: 360px;
+        height: 380px;
+        a {
+            color: black;
+            font-size: medium;
+            margin-top: 10px;
+            background-color: gray;
+            width: 100%;
+          }
+        }
+     }
+  
+     .nombresProductosN {
+        font-size: large;
+        font-weight: 400;
+        font-family: "Plus Jakarta Sans", sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid black;
+        border-radius: 8px;
+        width: 370px;
+        height: 460px;
+        background-color: white;
+        margin-bottom: 50px;
+              h4{
+                font-weight: 800;
+                padding-bottom: 1.5px;
+              }
+              p{
+                border: 1px solid rgb(57, 53, 53);
+                border-radius: 2px;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+              }
+              a{
+                text-decoration:underline;
+                  font-weight: 400;
+                  cursor: pointer;
+                  color: black;
+                  margin-top: 4px;
+              }
+      }
+
+ .subtituloMainN{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: rgb(18, 17, 17);
+    padding-top: 15px;
+    p{
+    font-size: x-large;
+    font-weight: bold;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    color: white;
+  }
+    h3{
+      color: rgb(255, 153, 0);
+      font-size: 600;
+      padding-top: 10px;
+  }
+  }
+
+      @media screen and (max-width: 500px){
+        .bodyNotebooks{
+            width: 100%;
+            height: 100%;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto auto auto;
+            grid-template-areas: "header"
+                                "main"
+                                "footer"
+        }
+
+        .contenidoHeaderN {
+            display: flex;
+            flex-direction: column;
+            margin-left: 5px;
+            margin-right: 5px;
+          }
+        
+        .productosN {
+            justify-items: center;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-areas: "notebook1"
+                                "notebook2"
+                                "notebook3"
+                                "notebook4"
+                                "notebook5"
+                                "notebook6"
+                                "notebook7"
+                                "notebook8";
+                                }
+      }
