@@ -80,10 +80,59 @@ nav ul li a {
   height: 100%;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: auto 80vh auto;
+  grid-template-rows: auto auto auto;
   grid-template-areas: "header" "main" "footer";
 }
 
+.contenedorBS {
+  height: 490px;
+  width: 90vh;
+  margin-bottom: 25px;
+}
+
+.subtituloContacto {
+  margin: 50px 300px 10px 300px;
+  text-align: center;
+  font-size: medium;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 900;
+}
+
+.barra-desp {
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 1350px) {
+  .subtituloContacto {
+    margin: 10px 50px;
+  }
+
+  .contenedorBS {
+    width: 80vh;
+    height: 750px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .subtituloContacto {
+    margin: 10px 50px;
+  }
+
+  .contenedorBS {
+    width: 80vh;
+    height: 750px;
+    margin: 0px 15px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .subtituloContacto {
+    margin: 10px 50px;
+  }
+
+  .contenedorBS {
+    width: 80vh;
+    height: 825px;
+  }
+}
 .bodyNotebooks {
   width: 100%;
   height: 100%;
@@ -169,6 +218,7 @@ nav ul li a {
   text-align: center;
   background-color: rgb(18, 17, 17);
   padding-top: 15px;
+  padding-bottom: 15px;
 }
 .subtituloMainN p {
   font-size: x-large;
@@ -182,6 +232,39 @@ nav ul li a {
   padding-top: 10px;
 }
 
+@media screen and (max-width: 1440px) {
+  .productosN {
+    justify-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "initial";
+  }
+}
+@media screen and (max-width: 1024px) {
+  .contenidoHeaderN {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .productosN {
+    justify-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "initial";
+  }
+}
+@media screen and (max-width: 768px) {
+  .contenidoHeaderN {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+}
 @media screen and (max-width: 500px) {
   .bodyNotebooks {
     width: 100%;
@@ -270,6 +353,31 @@ nav ul li a {
   margin-top: 4px;
 }
 
+@media screen and (max-width: 1350px) {
+  .productosA {
+    justify-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "initial";
+  }
+}
+@media screen and (max-width: 1024px) {
+  .contenidoHeaderA {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .productosA {
+    justify-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "initial";
+  }
+}
 @media screen and (max-width: 500px) {
   .bodyAuriculares {
     width: 100%;
@@ -288,6 +396,149 @@ nav ul li a {
   }
 
   .productosA {
+    justify-items: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "notebook1" "notebook2" "notebook3" "notebook4" "notebook5" "notebook6" "notebook7" "notebook8";
+  }
+}
+.bodyAuriculares {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: "header" "main" "footer";
+}
+
+.productosX {
+  justify-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "auriculares1 auriculares2 auriculares3 auriculares4" "auriculares5 auriculares6 auriculares7 auriculares8 ";
+  margin-bottom: 50px;
+}
+.productosX img {
+  width: 360px;
+  height: 380px;
+}
+.productosX img a {
+  color: black;
+  font-size: medium;
+  margin-top: 10px;
+  background-color: gray;
+  width: 100%;
+}
+
+.nombresProductosX {
+  font-size: large;
+  font-weight: 400;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 8px;
+  width: 370px;
+  height: 460px;
+  background-color: white;
+  margin-bottom: 50px;
+}
+.nombresProductosX h4 {
+  font-weight: 800;
+  padding-bottom: 1.5px;
+}
+.nombresProductosX p {
+  border: 1px solid rgb(57, 53, 53);
+  border-radius: 2px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.nombresProductosX a {
+  text-decoration: underline;
+  font-weight: 400;
+  cursor: pointer;
+  color: black;
+  margin-top: 4px;
+}
+
+.subtituloMainX {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  text-align: center;
+  background-color: rgb(18, 17, 17);
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.subtituloMainX p {
+  font-size: x-large;
+  font-weight: bold;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: white;
+}
+.subtituloMainX h3 {
+  color: rgb(255, 153, 0);
+  font-size: 600;
+  padding-top: 10px;
+}
+
+@media screen and (max-width: 1440px) {
+  .productosX {
+    justify-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "initial";
+  }
+}
+@media screen and (max-width: 1024px) {
+  .contenidoHeaderN {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .productosX {
+    justify-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "initial";
+  }
+}
+@media screen and (max-width: 768px) {
+  .contenidoHeaderN {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .bodyAccesorios {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "header" "main" "footer";
+  }
+
+  .contenidoHeaderN {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .productosX {
     justify-items: center;
     display: grid;
     grid-template-columns: 1fr;
@@ -432,16 +683,15 @@ footer {
   padding-left: 200px;
   padding-right: 200px;
 }
+footer p {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 15px;
+}
 
 .logosFooter {
   display: flex;
   gap: 15px;
   font-size: 25px;
-}
-
-footer p {
-  font-family: "Plus Jakarta Sans", sans-serif;
-  font-size: 15px;
 }
 
 .fa-twitter {

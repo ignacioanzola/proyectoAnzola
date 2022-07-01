@@ -86,6 +86,7 @@
     text-align: center;
     background-color: rgb(18, 17, 17);
     padding-top: 15px;
+    padding-bottom: 15px;
     p{
     font-size: x-large;
     font-weight: bold;
@@ -98,7 +99,40 @@
       padding-top: 10px;
   }
   }
+      @media screen and (max-width: 1440px){
+        .productosN {
+          justify-items: center;
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-template-rows: 1fr 1fr 1fr;
+          grid-template-areas: "initial";
+                              }
+      }
+      @media screen and (max-width: 1024px){
+        .contenidoHeaderN {
+          display: flex;
+          flex-direction: column;
+          margin-left: 5px;
+          margin-right: 5px;
+        }
+        
+        .productosN {
+          justify-items: center;
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-template-rows: 1fr 1fr 1fr 1fr;
+          grid-template-areas: "initial";
+                              }
+      }
 
+      @media screen and (max-width: 768px){
+        .contenidoHeaderN {
+          display: flex;
+          flex-direction: column;
+          margin-left: 5px;
+          margin-right: 5px;
+        }
+      }
       @media screen and (max-width: 500px){
         .bodyNotebooks{
             width: 100%;

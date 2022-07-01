@@ -5,6 +5,7 @@
 @import "contacto";
 @import "notebooks";
 @import "auriculares";
+@import "accesorios";
 
 * {
   padding: 0;
@@ -147,17 +148,16 @@ footer {
   align-items: center;
   padding-left: 200px;
   padding-right: 200px;
+          p {
+            font-family: "Plus Jakarta Sans", sans-serif;
+            font-size: 15px;
+       }
 }
 
 .logosFooter {
   display: flex;
   gap: 15px;
   font-size: 25px;
-}
-
-footer p {
-  font-family: "Plus Jakarta Sans", sans-serif;
-  font-size: 15px;
 }
 
 .fa-twitter{
